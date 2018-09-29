@@ -1,0 +1,32 @@
+{
+  "name": "layer",
+  "version": "1.0.0",
+  "description": "레이어 팝업 플러그인",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadowbug/layer.git"
+  },
+  "author": "shadowbug",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shadowbug/layer/issues"
+  },
+  "homepage": "https://github.com/shadowbug/layer#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0"
+  }
+}
