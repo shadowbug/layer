@@ -1,0 +1,74 @@
+.sfx-layer-container {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+.sfx-layer-container > .sfx-layer-popup {
+    position: absolute;
+    left:50%;
+    top: 50%;
+}
+
+.sfx-layer-popup {
+    background: white;
+}
+
+
+
+.sfx-layer-popup > ._header {
+    /* 오래된 브라우져용 */
+    background : #6799FF;
+    
+    /* 각 벤더사별 벤더 프리픽스 */
+    background : -moz-linear-gradient(0deg, #5587ED 0%, #6799FF 100%);
+    background : -webket-linear-gradient(0deg, #5587ED 0%, #6799FF 100%);
+    background : -o-linear-gradient(0deg, #5587ED 0%, #6799FF 100%);
+    background : -ms-linear-gradient(0deg, #5587ED 0%, #6799FF 100%);
+    
+    /* 웹 표준 */
+    background : linear-gradient(0deg, #5587ED 0%, #6799FF 100%);
+
+    box-sizing:border-box;
+    height: 30px;
+}
+
+.sfx-layer-popup > ._header > ._title {
+    box-sizing:border-box;
+    font-size:13px;
+    color: white;
+    padding-left:5px;
+    padding-top: 5px;
+}
+
+.sfx-layer-popup > ._header > ._title {
+    cursor: pointer;
+}
+
+
+.sfx-layer-popup > ._body {
+    height: calc(100% - 30px);
+}
+
+.sfx-layer-popup > ._body > ._view {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+

@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+
+        <title>레이어 팝업 예제</title>
+
+        <link rel="stylesheet" type="text/css" href="../layer.bundle.css">
+        <script type="text/javascript" src="../layer.bundle.js" ></script>
+
+        <script type="text/javascript" >
+             
+            function openLayer() {
+                sfx.layer.open({
+                    src : "/sample/index.html",
+                    move : true
+                });
+            }
+        </script>
+
+
+    </head>
+    <body>
+        <input type="button" value="레이어 확인" onclick="openLayer()" />
+        <div id="result">
+
+        </div>
+    </body>
+</html>
